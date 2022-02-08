@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --darker: rgb(55, 55, 55);
+    --lighter: rgb(200, 200, 200);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* delete this */
+div {
+    border: 1px solid purple;
+    background: var(--lighter);
+}
+
+.containerRight {
+    width: var(--rigth-width);
+}
+
+.containerLeft {
+    flex: 3;
+    background: url(./img/background.jpg);
+    background-size: cover;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    position: relative;
+    flex:5;
+    height: 15vh;
+    background: rgb(55, 55, 55, 0.65);
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo {
+    max-width: inehrit;
+    height: inherit;
+}
+
+
