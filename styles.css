@@ -3,26 +3,34 @@
 :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --darker: rgb(55, 55, 55);
-    --lighter: rgb(200, 200, 200);
+    --lighter: rgb(240, 240, 240);
+    --semi-light: rgb(225, 225, 225);
 }
 
 body {
     display: flex;
     height: 100vh;
+    margin: 0;
+    color: var(--darker)
 }
 
 /* delete this */
 div {
-    border: 1px solid purple;
-    background: var(--lighter);
+    border: .01px solid purple;
+    background: var(--semi-light);
 }
 
 .containerRight {
-    width: var(--rigth-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:5;
 }
 
 .containerLeft {
+    display: flex;
     flex: 3;
+    flex-direction: column;
     background: url(./img/background.jpg);
     background-size: cover;
 }
@@ -32,11 +40,9 @@ div {
     justify-content: center;
     margin-top: 10vw;
     position: relative;
-    flex:5;
     height: 15vh;
     background: rgb(55, 55, 55, 0.65);
     align-items: center;
-    justify-content: center;
     font-size: 3rem;
     font-weight: bold;
     color: white;
@@ -47,4 +53,30 @@ div {
     height: inherit;
 }
 
+.formDiv {
+    background-color: var(--lighter);
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.headerRightP {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    margin:0;
+}
+
+.formCell {
+    display:flex;
+    flex-direction: column;
+    padding: .2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--darker);
+    font-size: .6rem;
+}
