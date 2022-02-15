@@ -110,3 +110,12 @@ a {
     color: rgb(92, 136, 10);
     text-decoration:underline;
 }
+
+#lastName:focus {
+    border: .1rem solid rgb(33, 66, 173);
+    box-shadow: rgb(33, 66, 173);
+}
+
+#confirmPwd, #password {
+    border: .1rem solid red;
+}
