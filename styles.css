@@ -7,6 +7,8 @@
     --semi-light: rgb(225, 225, 225);
 }
 
+
+
 body {
     display: flex;
     height: 100vh;
@@ -16,7 +18,6 @@ body {
 
 /* delete this */
 div {
-    border: .01px solid purple;
     background: var(--semi-light);
 }
 
@@ -25,6 +26,10 @@ div {
     flex-direction: column;
     justify-content: center;
     flex:5;
+}
+
+.headerRight, .headerLeft {
+    margin-left: 1.5rem;
 }
 
 .containerLeft {
@@ -53,11 +58,19 @@ div {
     height: inherit;
 }
 
+.lets {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
 .formDiv {
     background-color: var(--lighter);
     height: 45vh;
     display: flex;
     flex-direction: column;
+    padding: .5rem;
+    overflow: scroll;
+
 }
 
 .headerRightP {
@@ -79,4 +92,21 @@ fieldset {
     font-weight: bold;
     color: var(--darker);
     font-size: .6rem;
+    background: var(--lighter);
+}
+
+.footer {
+    padding: 2rem;
+}
+.createAcc {
+    all:unset;
+    color: var(--semi-light);
+    cursor: pointer;
+    background: rgb(92, 136, 10);
+    padding: .5rem;
+}
+
+a {
+    color: rgb(92, 136, 10);
+    text-decoration:underline;
 }
